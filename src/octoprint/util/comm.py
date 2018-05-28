@@ -3116,7 +3116,7 @@ class MachineCom(object):
 					pass
 
 	def _gcode_M0_queuing(self, cmd, cmd_type=None, gcode=None, subcode=None, *args, **kwargs):
-		self.setPause(True)
+		##self.setPause(True)
 		return None, # Don't send the M0 or M1 to the machine, as M0 and M1 are handled as an LCD menu pause.
 	_gcode_M1_queuing = _gcode_M0_queuing
 
